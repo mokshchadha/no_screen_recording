@@ -44,9 +44,4 @@ abstract class NoScreenRecordingPlatform extends PlatformInterface {
     throw UnimplementedError(
         'onScreenRecordingStateChanged has not been implemented.');
   }
-
-  /// Sets secure mode features (like FLAG_SECURE on Android)
-  Future<void> setSecureMode(bool enable) {
-    throw UnimplementedError('setSecureMode() has not been implemented.');
-  }
 }

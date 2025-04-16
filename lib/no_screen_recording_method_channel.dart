@@ -31,11 +31,6 @@ class MethodChannelNoScreenRecording extends NoScreenRecordingPlatform {
   }
 
   @override
-  Future<void> setSecureMode(bool enable) async {
-    await methodChannel.invokeMethod<void>('setSecureMode', {'enable': enable});
-  }
-
-  @override
   Stream<bool> get onScreenRecordingStateChanged {
     return eventChannel.receiveBroadcastStream().map((event) => event as bool);
   }

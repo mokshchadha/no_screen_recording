@@ -18,7 +18,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  no_screen_recording: ^0.1.0
+  no_screen_recording: ^0.0.1
 ```
 
 ### Android Setup
