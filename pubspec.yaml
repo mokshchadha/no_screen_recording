@@ -1,0 +1,27 @@
+name: no_screen_recording
+description: A Flutter package that allows screenshots but prevents screen recording by blanking the screen.
+version: 0.0.1
+homepage: https://github.com/mokshchadha/no_screen_recording
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.no_screen_recording
+        pluginClass: NoScreenRecordingPlugin
+      ios:
+        pluginClass: NoScreenRecordingPlugin
